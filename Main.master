@@ -1,0 +1,16 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Main.master.cs" Inherits="Main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Ak Harita</title>
+    <link href="/style.css" rel="stylesheet" />
+</head>
+<body>
+    
+    
+
+    
+</body>
+</html>
