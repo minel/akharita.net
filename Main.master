@@ -9,80 +9,73 @@
 </head>
 <body>
     <div class="container">
-    	<div class="topmenu">
-    		<div class="navbar">
-    			<div class="logo"></div>
-    			<div class="nav-menu">
-    				<ul id="menu">
-    					<li><a href="/akharita">ANASAYFA</a></li>
-    					<li><a href="?page=hakkimizda">HAKKIMIZDA</a></li>
-    					<li><a href="?page=hizmetler">HİZMETLERİMİZ</a></li>
-    					<li><a href="#">REFERANSLAR</a></li>
-    					<li><a href="#">PROJELER</a></li>
-    					<li><a href="#">İLETİŞİM</a></li>
-    				</ul>
-    			</div>
-    		</div>
-    	</div>
-
-            <asp:ContentPlaceHolder ID="CphMidContents" runat="server">
-
-            </asp:ContentPlaceHolder>
-
-        <div class="footer">
-                <div class="footer-item">
-                    <div class="item-pic">
-                        <img src="/images/visit.png" />
-                    </div>
-                    <div class="item-detail">
-                        <h5>Adres</h5>
-                        <span>
-                            Özyurtlar N Towers b4 blok / Haramidere Esenyurt
-                        </span>
-                    </div>
-                </div>
-                <div class="footer-item">
-                    <div class="item-pic">
-                        <img src="/images/call.png" />
-                        
-                    </div>
-                    <div class="item-detail">
-                        <h5>Telefon</h5>
-                        <span>
-                            T: +90 (532) 588 07 90
-                        </span>
-                    </div>
-                </div>
-                <div class="footer-item">
-                    <div class="item-pic">
-                        <img src="/images/mail.png" />
-                    </div>
-                    <div class="item-detail">
-                        <h5>İletişim</h5>
-                        <span>
-                            info@akharita.com
-                        </span>
-                    </div>
-                </div>
-                <div class="footer-item">
-                    <div class="item-pic">
-                        <img src="/images/copyright.png" />
-                    </div>
-                    <div class="item-detail mr0">
-                        <h5>
-                            Copyright
-                        </h5>
-                        <span>
-                            Her Hakkı Saklıdır.
-                        </span>
-                    </div>
+        <div class="topmenu">
+            <div class="navbar">
+                <div class="logo"></div>
+                <div class="nav-menu">
+                    <ul id="menu">
+                        <li><a href="Default.aspx">ANASAYFA</a></li>
+                        <li><a href="?page=hakkimizda">HAKKIMIZDA</a></li>
+                        <li><a href="?page=hizmetler">HİZMETLERİMİZ</a></li>
+                        <li><a href="#">REFERANSLAR</a></li>
+                        <li><a href="#">PROJELER</a></li>
+                        <li><a href="#">İLETİŞİM</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
 
-    
+        <asp:ContentPlaceHolder ID="CphMidContents" runat="server">
+        </asp:ContentPlaceHolder>
 
-    
+        <div class="footer">
+            <div class="footer-item">
+                <div class="item-pic">
+                    <img src="/images/visit.png" />
+                </div>
+                <div class="item-detail">
+                    <h5>Adres</h5>
+                    <span>Özyurtlar N Towers b4 blok / Haramidere Esenyurt
+                    </span>
+                </div>
+            </div>
+            <div class="footer-item">
+                <div class="item-pic">
+                    <img src="/images/call.png" />
+
+                </div>
+                <div class="item-detail">
+                    <h5>Telefon</h5>
+                    <span>T: +90 (532) 588 07 90
+                    </span>
+                </div>
+            </div>
+            <div class="footer-item">
+                <div class="item-pic">
+                    <img src="/images/mail.png" />
+                </div>
+                <div class="item-detail">
+                    <h5>İletişim</h5>
+                    <span>info@akharita.com
+                    </span>
+                </div>
+            </div>
+            <div class="footer-item">
+                <div class="item-pic">
+                    <img src="/images/copyright.png" />
+                </div>
+                <div class="item-detail mr0">
+                    <h5>Copyright
+                    </h5>
+                    <span>Her Hakkı Saklıdır.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <script type="text/javascript" src="/js/jquery.min.js"></script>
     <script type="text/javascript" src="/bxslider/jquery.bxslider.js"></script>
     <script type="text/javascript">
@@ -94,6 +87,6 @@
             });
         });
     </script>
-    
+
 </body>
 </html>
