@@ -76,12 +76,9 @@
                         <img src="images/teklif1.jpg" /></div>
                     <div class="offer-link">
                         <h4>Cephe Rölöve Teklifi</h4>
-                        <span>I'm a Paragraph.
-					  	Click here to add your own text and edit me. 
-					  	It’s easy. Just click “Edit Text” or double click me and 
-					  	you can start adding your own content and make changes to the font. 
-					  	I’m a great place for you to let your users know a little more about you. 
-					  	If you want to delete me just click on me and press delete.
+                        <span>
+                            En kusursuz Cephe Rölöve için teklif almak istiyorsanız Teklif Formu' muzu linke tıklayarak doldurup gönderebilirsiniz.
+                        
                         </span>
                     </div>
                 </div>
@@ -91,12 +88,7 @@
                         <img src="images/teklif2.jpg" /></div>
                     <div class="offer-link">
                         <h4>Haritacılık Hizmet Teklifi</h4>
-                        <span>I'm a Paragraph.
-					  	Click here to add your own text and edit me. 
-					  	It’s easy. Just click “Edit Text” or double click me and 
-					  	you can start adding your own content and make changes to the font. 
-					  	I’m a great place for you to let your users know a little more about you. 
-					  	If you want to delete me just click on me and press delete.
+                        <span>Haritacılık hizmetimiz için teklif almak istiyorsanız formumuzu doldurarak en iyi teklifi alabilirsiniz.
                         </span>
                     </div>
                 </div>

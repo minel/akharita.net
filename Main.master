@@ -16,8 +16,8 @@
                 <div class="nav-menu">
                     <ul id="menu">
                         <li><a href="Default.aspx">ANASAYFA</a></li>
-                        <li><a href="?page=hakkimizda">HAKKIMIZDA</a></li>
-                        <li><a href="?page=hizmetler">HİZMETLERİMİZ</a></li>
+                        <li><a href="Hakkimizda.aspx">HAKKIMIZDA</a></li>
+                        <li><a href="Hizmetler.aspx">HİZMETLERİMİZ</a></li>
                         <li><a href="#">REFERANSLAR</a></li>
                         <li><a href="#">PROJELER</a></li>
                         <li><a href="#">İLETİŞİM</a></li>
