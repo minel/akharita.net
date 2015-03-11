@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Ak Harita</title>
+    <link href="/bxslider/jquery.bxslider.css" rel="stylesheet" />
     <link href="/styles/style.css" rel="stylesheet" />
 </head>
 <body>
