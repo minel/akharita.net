@@ -10,7 +10,15 @@
 
     <div class="referanslar-contains">
         <div class="referanslar-menu">
-           <!-- i will add ul-li menu and it's binding asp.net repeater -->
+            <!-- i will add ul-li menu and it's binding asp.net repeater -->
+            <ul>
+                <asp:Repeater runat="server" ID="rptmenu">
+                    <ItemTemplate>
+
+                    </ItemTemplate>
+                </asp:Repeater>
+            </ul>
+            
         </div>
         <div class="referanslar-gallery">
             <!-- this are is photo gallery area. This area will bind animated photos jquery ajax post/get method thats all -->

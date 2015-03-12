@@ -9,6 +9,11 @@ public partial class Referanslar : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        int gid;
 
+        if (Request.QueryString["galleryid"] != null)
+        {
+            gid = Convert.ToInt32(Request.QueryString["galleryid"]);
+        }
     }
 }
