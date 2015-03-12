@@ -9,8 +9,18 @@
     </div>
 
     <div class="referanslar-contains">
-
+        <div class="referanslar-menu">
+           <!-- i will add ul-li menu and it's binding asp.net repeater -->
+        </div>
+        <div class="referanslar-gallery">
+            <!-- this are is photo gallery area. This area will bind animated photos jquery ajax post/get method thats all -->
+        </div>
     </div>
+
+    <script type="text/javascript">
+        //this is jquery ajax post area
+    </script>
+
 
 </asp:Content>
 
