@@ -265,7 +265,7 @@ ul.special {
     margin-bottom: 50px;
 }
 
-    .pages-head h1, h3, .hakkimizda-contains h2 {
+    .pages-head h1, h3, .hakkimizda-contains h2, .iletisim-item h2 {
         font-family: 'Open Sans', sans-serif;
         font-weight: normal;
         color: #545658;
@@ -326,7 +326,7 @@ ul.special {
         font-size: 13px;
     }
 
-.hakkimizda-contains {
+.hakkimizda-contains, .iletisim-contains {
     padding: 0px 25px 0px 25px;
     height: 425px;
 }
@@ -335,9 +335,24 @@ ul.special {
     height: 150px;
 }
 
-    .hakkimiz span {
+    .hakkimiz span, .iletisim-item span {
         float: left;
         padding: 10px;
         font-family: 'Open Sans', sans-serif;
         color: #545658;
     }
+
+.iletisim-contains{
+    height: 755px;
+}
+
+.iletisim-item{
+    height: 90px;
+}
+
+.iletisim-map{
+    margin-left: 10px;
+    margin-top:10px;
+    height:400px;
+}
+
