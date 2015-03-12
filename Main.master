@@ -18,7 +18,7 @@
                         <li><a href="Default.aspx">ANASAYFA</a></li>
                         <li><a href="Hakkimizda.aspx">HAKKIMIZDA</a></li>
                         <li><a href="Hizmetler.aspx">HİZMETLERİMİZ</a></li>
-                        <li><a href="#">REFERANSLAR</a></li>
+                        <li><a href="Referanslar.aspx">REFERANSLAR</a></li>
                         <li><a href="#">PROJELER</a></li>
                         <li><a href="Iletisim.aspx">İLETİŞİM</a></li>
                     </ul>
@@ -36,7 +36,7 @@
                 </div>
                 <div class="item-detail">
                     <h5>Adres</h5>
-                    <span>Özyurtlar N Towers b4 blok / Haramidere Esenyurt
+                    <span>Özyurtlar N Towers B4 Blok / Haramidere Esenyurt
                     </span>
                 </div>
             </div>
