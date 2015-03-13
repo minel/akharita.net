@@ -14,7 +14,7 @@
         </div>
         <div class="iletisim-item">
             <h2>Telefonlarımız</h2>
-            <span>+90 (532) 588 07 90</span>
+            <span><b>Tel1:</b> +90 (532) 588 07 90 &nbsp;&nbsp; <b>Tel2:</b> +90 (542) 319 03 91</span>
         </div>
         <div class="iletisim-item">
             <h2>Mail</h2>

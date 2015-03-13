@@ -6,15 +6,16 @@
         <h1>Referanslarımız</h1>
         <h3>
         Bugüne kadar yapmış olduğumuz çalışmaları bu başlık altında görebilirsiniz.</h3>
+        
     </div>
 
     <div class="referanslar-contains">
         <div class="referanslar-menu">
             <!-- i will add ul-li menu and it's binding asp.net repeater -->
-            <ul>
+            <ul id="photomenu">
                 <asp:Repeater runat="server" ID="rptmenu">
                     <ItemTemplate>
-
+                        <li><%# Container.DataItem.ToString() %></li>
                     </ItemTemplate>
                 </asp:Repeater>
             </ul>

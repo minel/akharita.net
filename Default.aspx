@@ -100,11 +100,8 @@
             </div>
             <div class="specials">
                 <ul class="special">
-                    <li><a href="Hizmetler.aspx">Boyutlu (Cephe) Rölöve</a></li>
-                    <li><a href="Hizmetler.aspx">Haritacılık Hizmetleri</a></li>
-                    <li><a href="Hizmetler.aspx">Proje Uygulama ve Kontrol</a></li>
-                    <li><a href="Hizmetler.aspx">Kontrol ve Aplikasyon</a></li>
-                    <li><a href="Hizmetler.aspx">Mimari Rölöve</a></li>
+                    <li><a href="Hizmetler.aspx">Perspektif (3D) Rölöve</a></li>
+                    <li><a href="Hizmetler.aspx">Harita Hizmetleri</a></li>
                     <li><a href="Hizmetler.aspx">İç Mekan Rölöve</a></li>
                 </ul>
             </div>

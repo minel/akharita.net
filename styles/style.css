@@ -9,6 +9,14 @@
     -webkit-box-shadow: 0px 0px 14px 0px rgba(50, 50, 50, 0.79);
     -moz-box-shadow: 0px 0px 14px 0px rgba(50, 50, 50, 0.79);
     box-shadow: 0px 0px 14px 0px rgba(50, 50, 50, 0.79);
+    min-height: 100%;
+    position: relative;
+}
+
+.footer{
+    -webkit-box-shadow: 0px 5px 14px 0px rgba(50, 50, 50, 0.79);
+    -moz-box-shadow: 0px 5px 14px 0px rgba(50, 50, 50, 0.79);
+    box-shadow: 0px 5px 14px 0px rgba(50, 50, 50, 0.79);
 }
 
 .navbar {
@@ -140,7 +148,7 @@ ul.bxslider {
 }
 
 .outfos {
-    height: 334px;
+    height: 290px;
 }
 
 .services-left {
@@ -165,7 +173,7 @@ ul.bxslider {
 }
 
 .offer {
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     height: 106px;
 }
 
@@ -236,6 +244,9 @@ ul.special {
     background-color: rgb(33,32,27);
     padding-top: 20px;
     padding-left: 20px;
+    position: absolute;
+    bottom: -76px;
+    width: 940px;
 }
 
 .footer-item {
@@ -278,7 +289,7 @@ ul.special {
 
 
 .hizmetler-contains {
-    height: 425px;
+    height: 350px;
 }
 
 .hizmet {
@@ -328,7 +339,7 @@ ul.special {
 
 .hakkimizda-contains, .iletisim-contains {
     padding: 0px 25px 0px 25px;
-    height: 425px;
+    height: 420px;
 }
 
 .hakkimiz {
@@ -356,3 +367,8 @@ ul.special {
     height:400px;
 }
 
+ul#photomenu{
+    list-style:none;
+    font-family: 'Open Sans', sans-serif;
+    color: #545658;
+}
