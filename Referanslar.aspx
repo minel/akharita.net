@@ -10,7 +10,7 @@
     </div>
 
     <div class="referanslar-contains">
-        <div class="referanslar-menu">
+        <div class="accordionmenu referanslar-menu">
             <asp:Literal ID="ltrphotogroup" runat="server">
 
             </asp:Literal>

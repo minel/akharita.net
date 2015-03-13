@@ -100,9 +100,9 @@
             </div>
             <div class="specials">
                 <ul class="special">
-                    <li><a href="Hizmetler.aspx">Perspektif (3D) Rölöve</a></li>
-                    <li><a href="Hizmetler.aspx">Harita Hizmetleri</a></li>
-                    <li><a href="Hizmetler.aspx">İç Mekan Rölöve</a></li>
+                    <li><a href="/hizmetler">Perspektif (3D) Rölöve</a></li>
+                    <li><a href="/hizmetler">Harita Hizmetleri</a></li>
+                    <li><a href="/hizmetler">İç Mekan Rölöve</a></li>
                 </ul>
             </div>
         </div>

@@ -5,9 +5,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Ak Harita</title>
-    <link href="bxslider/jquery.bxslider.css" rel="stylesheet" />
-    <link href="styles/accordionmenu.css" rel="stylesheet" />
-    <link href="styles/style.css" rel="stylesheet" />
+    <link href="/bxslider/jquery.bxslider.css" rel="stylesheet" />
+    <link href="/styles/accordionmenu.css" rel="stylesheet" />
+    <link href="/styles/style.css" rel="stylesheet" />
 </head>
 <body>
     <div class="container">
@@ -16,12 +16,12 @@
                 <div class="logo"></div>
                 <div class="nav-menu">
                     <ul id="menu">
-                        <li><a href="Default.aspx">ANASAYFA</a></li>
-                        <li><a href="Hakkimizda.aspx">HAKKIMIZDA</a></li>
-                        <li><a href="Hizmetler.aspx">HİZMETLERİMİZ</a></li>
-                        <li><a href="Referanslar.aspx">REFERANSLAR</a></li>
+                        <li><a href="/">ANASAYFA</a></li>
+                        <li><a href="/hakkimizda">HAKKIMIZDA</a></li>
+                        <li><a href="/hizmetler">HİZMETLERİMİZ</a></li>
+                        <li><a href="/referanslar">REFERANSLAR</a></li>
                         <li><a href="#">PROJELER</a></li>
-                        <li><a href="Iletisim.aspx">İLETİŞİM</a></li>
+                        <li><a href="/iletisim">İLETİŞİM</a></li>
                     </ul>
                 </div>
             </div>
@@ -33,7 +33,7 @@
         <div class="footer">
             <div class="footer-item">
                 <div class="item-pic">
-                    <img src="images/visit.png" />
+                    <img src="/images/visit.png" />
                 </div>
                 <div class="item-detail">
                     <h5>Adres</h5>
@@ -43,7 +43,7 @@
             </div>
             <div class="footer-item">
                 <div class="item-pic">
-                    <img src="images/call.png" />
+                    <img src="/images/call.png" />
 
                 </div>
                 <div class="item-detail">
@@ -54,7 +54,7 @@
             </div>
             <div class="footer-item">
                 <div class="item-pic">
-                    <img src="images/mail.png" />
+                    <img src="/images/mail.png" />
                 </div>
                 <div class="item-detail">
                     <h5>İletişim</h5>
@@ -64,7 +64,7 @@
             </div>
             <div class="footer-item">
                 <div class="item-pic">
-                    <img src="images/copyright.png" />
+                    <img src="/images/copyright.png" />
                 </div>
                 <div class="item-detail mr0">
                     <h5>Copyright
@@ -78,9 +78,9 @@
 
 
 
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="bxslider/jquery.bxslider.js"></script>
-    <script src="js/accordionmenu.js"></script>
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/bxslider/jquery.bxslider.js"></script>
+    <script src="/js/accordionmenu.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $('.bxslider').bxSlider({

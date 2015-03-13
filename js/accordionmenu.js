@@ -1,6 +1,6 @@
 ﻿(function ($) {
     $(document).ready(function () {
-        $('.referanslar-menu li.has-sub>a').on('click', function () {
+        $('.accordionmenu li.has-sub>a').on('click', function () {
             $(this).removeAttr('href');
             var element = $(this).parent('li');
             if (element.hasClass('open')) {

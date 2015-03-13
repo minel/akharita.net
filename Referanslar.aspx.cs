@@ -36,7 +36,7 @@ public partial class Referanslar : System.Web.UI.Page
 
         for (int i = 0; i < lettergroup.Count; i++)
         {
-            sb.Append("<li class='has-sub'><a href='?group="+lettergroup[i]+"'>" + lettergroup[i] + "</a>");
+            sb.Append("<li class='has-sub'><a href='/referanslar/"+lettergroup[i]+"'>" + lettergroup[i] + "</a>");
             
             sb.Append("<ul>");
             string underletter  = Server.MapPath("~/images/References/"+ lettergroup[i]);
@@ -51,7 +51,7 @@ public partial class Referanslar : System.Web.UI.Page
             {
                 subfoldername = item.Split('\\')[10]; //server tarafında iki eksik
 
-                sb.Append("<li><a href='?group="+subfoldername+"'>"+subfoldername+"</a></li>");
+                sb.Append("<li><a href='/referanslar/"+lettergroup[i].Trim()+"/"+subfoldername.Replace(' ','-')+"'>"+subfoldername+"</a></li>");
             }
 
             
