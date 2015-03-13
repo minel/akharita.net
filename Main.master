@@ -6,6 +6,7 @@
 <head runat="server">
     <title>Ak Harita</title>
     <link href="bxslider/jquery.bxslider.css" rel="stylesheet" />
+    <link href="styles/accordionmenu.css" rel="stylesheet" />
     <link href="styles/style.css" rel="stylesheet" />
 </head>
 <body>
@@ -79,6 +80,7 @@
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="bxslider/jquery.bxslider.js"></script>
+    <script src="js/accordionmenu.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $('.bxslider').bxSlider({

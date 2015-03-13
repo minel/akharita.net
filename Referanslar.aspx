@@ -11,15 +11,9 @@
 
     <div class="referanslar-contains">
         <div class="referanslar-menu">
-            <!-- i will add ul-li menu and it's binding asp.net repeater -->
-            <ul id="photomenu">
-                <asp:Repeater runat="server" ID="rptmenu">
-                    <ItemTemplate>
-                        <li><%# Container.DataItem.ToString() %></li>
-                    </ItemTemplate>
-                </asp:Repeater>
-            </ul>
-            
+            <asp:Literal ID="ltrphotogroup" runat="server">
+
+            </asp:Literal>
         </div>
         <div class="referanslar-gallery">
             <!-- this are is photo gallery area. This area will bind animated photos jquery ajax post/get method thats all -->

@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+.active {
+    font-weight: bold;
+}
+
 .container {
     width: 960px;
     margin: 0 auto;
@@ -367,8 +371,39 @@ ul.special {
     height:400px;
 }
 
+.referanslar-menu{
+    width: 260px;
+    border-right: 1px solid #545658;
+}
+
 ul#photomenu{
     list-style:none;
     font-family: 'Open Sans', sans-serif;
+    
+}
+
+ul#photomenu li{
+    margin-bottom:1px;
+}
+
+ul#photomenu li a{
     color: #545658;
+    text-decoration:none;
+}
+
+ul#photomenu > li > a{
+    
+    
+    display: block;
+    width: 50px;
+    
+    height: 20px;
+    text-align: center;
+    padding-top: 5px;
+    font-weight: bold;
+    
+}
+
+ul#photomenu > li a:hover{
+    color: rgb(81,156,255);
 }
