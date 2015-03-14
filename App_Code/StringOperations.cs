@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 
@@ -32,4 +33,25 @@ public static class StringOperations
         }
         return rzlt;
     }
+
+
+    public static List<string> GetPhotoNames(this string path)
+    {
+        string galleryfoldername = Directory.GetDirectories(path).FirstOrDefault().Split('\\')[10]; // servera atarken 8 yapacaksın galiba
+
+        string subpath = path + "\\" + galleryfoldername;
+
+        string[] photopaths = Directory.GetFiles(subpath);
+
+        List<string> photonames = new List<string>();
+
+        foreach (var item in photopaths)
+        {
+            photonames.Add(item.Split('\\')[11]); // o zaman burada server da 9 mu oluyor şimdi
+        }
+
+        return photonames;
+
+    }
+    
 }

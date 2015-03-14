@@ -10,6 +10,7 @@ using System.Web.UI.WebControls;
 public partial class Referanslar : System.Web.UI.Page
 {
     StringBuilder sb = new StringBuilder();
+    StringBuilder sbphotos = new StringBuilder();
 
     List<string> fnames = new List<string>();
 
@@ -27,7 +28,18 @@ public partial class Referanslar : System.Web.UI.Page
 
 
         WriteMenu(fnames);
-        FirstLoad();
+
+        string letterpath = Server.MapPath("~/images/References/A");
+
+        List<string> defaultImages = StringOperations.GetPhotoNames(letterpath);
+
+        FillData(defaultImages);
+
+    }
+
+    private void FillData(List<string> defaultImages)
+    {
+        
     }
 
     private void WriteMenu(List<string> lettergroup)
@@ -68,7 +80,7 @@ public partial class Referanslar : System.Web.UI.Page
 
     }
 
-    private void FirstLoad()
+    /*private void FirstLoad()
     {
         string path = Server.MapPath("~/images/References/A");
 
@@ -83,11 +95,11 @@ public partial class Referanslar : System.Web.UI.Page
 
         foreach (var item in photopaths)
         {
-            photonames.Add(item.Split('\\')[11]);
+            photonames.Add(item.Split('\\')[11]); // o zaman burada server da 9 mu oluyor şimdi
         }
 
 
-    }
+    }*/
     
 
 }
