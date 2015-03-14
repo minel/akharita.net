@@ -3,9 +3,7 @@
     margin: 0;
 }
 
-.active {
-    font-weight: bold;
-}
+
 
 .container {
     width: 960px;
@@ -351,11 +349,13 @@ ul.special {
 }
 
     .hakkimiz span, .iletisim-item span {
-        float: left;
         padding: 10px;
         font-family: 'Open Sans', sans-serif;
         color: #545658;
-    }
+    
+        font-size: 1.0em;
+        display: inline-block;
+}
 
 .iletisim-contains{
     height: 755px;
@@ -371,39 +371,42 @@ ul.special {
     height:400px;
 }
 
-/*.referanslar-menu{
-    width: 260px;
-    border-right: 1px solid #545658;
+
+
+.referanslar-contains{
+    display:flex;
+    display: -webkit-flex;
+    padding-bottom: 50px;
 }
 
-ul#photomenu{
-    list-style:none;
-    font-family: 'Open Sans', sans-serif;
-    
-}
-
-ul#photomenu li{
-    margin-bottom:1px;
-}
-
-ul#photomenu li a{
-    color: #545658;
-    text-decoration:none;
-}
-
-ul#photomenu > li > a{
-    
-    
-    display: block;
-    width: 50px;
-    
-    height: 20px;
-    text-align: center;
-    padding-top: 5px;
+.active, .accordionmenu ul li ul li a:hover  {
     font-weight: bold;
-    
+    color: rgb(81,156,255);
 }
 
-ul#photomenu > li a:hover{
+.referanslar-menu{
+    margin-left: 20px;
+
+}
+
+.accordionmenu > ul > li > a:hover{
     color: rgb(81,156,255);
-}*/
+}
+
+.referanslar-menu{
+    margin-left: 20px;
+}
+
+.accordionmenu > ul > li > a:hover{
+    color: rgb(81,156,255);
+}
+
+.vr {
+    width: 2px;
+    background-color: rgb(204,204,203);
+    float: left;
+}
+
+.referanslar-gallery{
+    float:left;
+}

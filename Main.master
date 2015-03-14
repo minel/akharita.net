@@ -91,5 +91,26 @@
         });
     </script>
 
+    <script type="text/javascript">
+        //this is jquery ajax post area
+
+        $('.photoslink').click(function () {
+            var postdata = $(this).data('id');
+
+            $.ajax({ // ajax işlemi başlar
+                type: 'POST', // veri gönderme tipimiz. get olabilirdi json olabilirdi. ama biz post kullanıyoruz
+                url: 'Gallery.aspx', // post edilecek adres
+                data: postdata, //post edilecek veriler
+                success: function (cevap) {// işlem başarılıysa
+                    $(".referanslar-gallery").html(cevap); //sonuc id'sine Gallery.aspx den dönen verileri basıyoruz.
+                }
+            });
+
+            $('.photoslink').removeClass('active');
+            $(this).addClass('active');
+
+        });
+
+    </script>
 </body>
 </html>

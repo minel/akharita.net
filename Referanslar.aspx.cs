@@ -22,12 +22,12 @@ public partial class Referanslar : System.Web.UI.Page
 
         foreach (var item in folders)
         {
-            fnames.Add(item.Split('\\')[9]); //server için 7 olacak
+            fnames.Add(item.Split('\\')[9]); //server için 7 olacak local 9
         }
 
 
         WriteMenu(fnames);
-
+        FirstLoad();
     }
 
     private void WriteMenu(List<string> lettergroup)
@@ -36,10 +36,10 @@ public partial class Referanslar : System.Web.UI.Page
 
         for (int i = 0; i < lettergroup.Count; i++)
         {
-            sb.Append("<li class='has-sub'><a href='/referanslar/"+lettergroup[i]+"'>" + lettergroup[i] + "</a>");
-            
+            sb.Append("<li class='has-sub'><a href='/referanslar/" + lettergroup[i] + "'>" + lettergroup[i] + "</a>");
+
             sb.Append("<ul>");
-            string underletter  = Server.MapPath("~/images/References/"+ lettergroup[i]);
+            string underletter = Server.MapPath("~/images/References/" + lettergroup[i]);
 
             List<string> foldersbyletter = Directory.GetDirectories(underletter).ToList();
 
@@ -49,12 +49,15 @@ public partial class Referanslar : System.Web.UI.Page
 
             foreach (var item in foldersbyletter)
             {
-                subfoldername = item.Split('\\')[10]; //server tarafında iki eksik
+                subfoldername = item.Split('\\')[10]; //server tarafında 8 localde 10
 
-                sb.Append("<li><a href='/referanslar/"+lettergroup[i].Trim()+"/"+subfoldername.Replace(' ','-')+"'>"+subfoldername+"</a></li>");
+                //sb.Append("<li><a class='photoslink' data-id='/referanslar/" + lettergroup[i].Trim() + "/" + subfoldername.Replace(' ', '-') + "'>" + subfoldername + "</a></li>");
+                sb.Append("<li><a class='photoslink' data-id='" + subfoldername.Replace(' ', '-').EnglishCharLCase()  + "'>" + subfoldername + "</a></li>");
+
             }
 
             
+
             sb.Append("</ul></li>");
 
         }
@@ -64,5 +67,27 @@ public partial class Referanslar : System.Web.UI.Page
         ltrphotogroup.Text = sb.ToString();
 
     }
+
+    private void FirstLoad()
+    {
+        string path = Server.MapPath("~/images/References/A");
+
+        string galleryfoldername = Directory.GetDirectories(path).FirstOrDefault().Split('\\')[10]; // servera atarken 8 yapacaksın galiba
+
+        string subpath = path + "\\" + galleryfoldername;
+
+        string[] photopaths = Directory.GetFiles(subpath);
+
+
+        List<string> photonames = new List<string>();
+
+        foreach (var item in photopaths)
+        {
+            photonames.Add(item.Split('\\')[11]);
+        }
+
+
+    }
+    
 
 }

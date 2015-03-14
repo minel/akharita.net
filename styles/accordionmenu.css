@@ -29,14 +29,14 @@
 }
 .accordionmenu > ul > li > a {
 
-  padding: 10px 0px;
+  padding: 5px 10px;
   cursor: pointer;
   z-index: 2;
   font-family:Calibri;
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
-  color:rgb(5,104,57);
+  color: #545658;
 }
 
 .accordionmenu ul li ul li a{
@@ -78,8 +78,8 @@
 .accordionmenu ul ul li a {
   cursor: pointer;
   
-  padding: 7px 0px;
-  padding-left: 30px;
+  padding: 5px 0px;
+  padding-left: 25px;
   z-index: 1;
   text-decoration: none;
   font-size: 13px;

@@ -15,17 +15,17 @@
         if (mc.Count > 0)
             MyContext.RewritePath("/Hizmetler.aspx");
 
-        mc = Regex.Matches(q, @"hakkimizda");
+        mc = Regex.Matches(q, @"hakkimizda$");
         param = q.Split('/');
         if (mc.Count > 0)
             MyContext.RewritePath("/Hakkimizda.aspx");
 
-        mc = Regex.Matches(q, @"referanslar");
+        mc = Regex.Matches(q, @"referanslar$");
         param = q.Split('/');
         if (mc.Count > 0)
             MyContext.RewritePath("/Referanslar.aspx");
-        
-        mc = Regex.Matches(q, @"iletisim");
+
+        mc = Regex.Matches(q, @"iletisim$");
         param = q.Split('/');
         if (mc.Count > 0)
             MyContext.RewritePath("/Iletisim.aspx");

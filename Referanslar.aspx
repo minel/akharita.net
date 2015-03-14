@@ -15,14 +15,13 @@
 
             </asp:Literal>
         </div>
-        <div class="referanslar-gallery">
+        <div class="vr"></div>
+        <div class="referanslar-gallery" runat="server" id="gallerydiv">
             <!-- this are is photo gallery area. This area will bind animated photos jquery ajax post/get method thats all -->
         </div>
     </div>
 
-    <script type="text/javascript">
-        //this is jquery ajax post area
-    </script>
+    
 
 
 </asp:Content>
