@@ -10,7 +10,7 @@ using System.Web.UI.WebControls;
 public partial class Referanslar : System.Web.UI.Page
 {
     StringBuilder sb = new StringBuilder();
-    StringBuilder sbphotos = new StringBuilder();
+    StringBuilder sbdefphotos = new StringBuilder();
 
     List<string> fnames = new List<string>();
 
@@ -30,8 +30,9 @@ public partial class Referanslar : System.Web.UI.Page
         WriteMenu(fnames);
 
         string letterpath = Server.MapPath("~/images/References/A");
+        string firstfolderpath = Directory.GetDirectories(letterpath).FirstOrDefault();
 
-        List<string> defaultImages = StringOperations.GetPhotoNames(letterpath);
+        List<string> defaultImages = StringOperations.GetPhotoNames(firstfolderpath);
 
         FillData(defaultImages);
 
@@ -58,13 +59,15 @@ public partial class Referanslar : System.Web.UI.Page
             List<string> fnames2 = new List<string>();
 
             string subfoldername;
+            string letter;
 
             foreach (var item in foldersbyletter)
             {
+                letter = item.Split('\\')[9];
                 subfoldername = item.Split('\\')[10]; //server tarafında 8 localde 10
 
                 //sb.Append("<li><a class='photoslink' data-id='/referanslar/" + lettergroup[i].Trim() + "/" + subfoldername.Replace(' ', '-') + "'>" + subfoldername + "</a></li>");
-                sb.Append("<li><a class='photoslink' data-id='" + subfoldername.Replace(' ', '-').EnglishCharLCase()  + "'>" + subfoldername + "</a></li>");
+                sb.Append("<li><a class='photoslink' data-id='" + letter+ "\\" + subfoldername.Replace(' ', '-').EnglishCharLCase()  + "'>" + subfoldername + "</a></li>");
 
             }
 

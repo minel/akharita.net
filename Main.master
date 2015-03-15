@@ -6,7 +6,9 @@
 <head runat="server">
     <title>Ak Harita</title>
     <link href="/bxslider/jquery.bxslider.css" rel="stylesheet" />
+    <link href="/fancy/jquery.fancybox.css" rel="stylesheet" />
     <link href="/styles/accordionmenu.css" rel="stylesheet" />
+    
     <link href="/styles/style.css" rel="stylesheet" />
 </head>
 <body>
@@ -80,7 +82,8 @@
 
     <script type="text/javascript" src="/js/jquery.min.js"></script>
     <script type="text/javascript" src="/bxslider/jquery.bxslider.js"></script>
-    <script src="/js/accordionmenu.js"></script>
+    <script type="text/javascript" src="/js/accordionmenu.js"></script>
+    <script type="text/javascript" src="/fancy/jquery.fancybox.pack.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $('.bxslider').bxSlider({
@@ -90,6 +93,17 @@
             });
         });
     </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+	        $(".fancybox").fancybox({
+		        openEffect	: 'none',
+		        closeEffect	: 'none'
+	        });
+        });
+    </script>
+
+    
 
     <script type="text/javascript">
         //this is jquery ajax post area

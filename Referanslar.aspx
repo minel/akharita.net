@@ -18,6 +18,12 @@
         <div class="vr"></div>
         <div class="referanslar-gallery" runat="server" id="gallerydiv">
             <!-- this are is photo gallery area. This area will bind animated photos jquery ajax post/get method thats all -->
+            <a class="fancybox" rel="gallery1" href="/images/References/A/Antalya/KAO AKM.jpg" title="deneme">
+                <img src="images/References/A/Antalya/KAO%20AKM.jpg" />
+            </a>
+            <a class="fancybox" rel="gallery1" href="/images/References/A/Antalya/KAO AKM2.jpg" title="deneme">
+                <img src="images/References/A/Antalya/KAO%20AKM2.jpg" />
+            </a>
         </div>
     </div>
 

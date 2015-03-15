@@ -410,3 +410,8 @@ ul.special {
 .referanslar-gallery{
     float:left;
 }
+
+a.fancybox img{
+    width: 150px;
+    max-height: 100px;
+}
