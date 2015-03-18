@@ -23,7 +23,9 @@ public partial class Referanslar : System.Web.UI.Page
 
         foreach (var item in folders)
         {
-            fnames.Add(item.Split('\\')[9]); //server için 7 olacak local 9
+            string[] words = item.Split('\\');
+
+            fnames.Add(words[words.Count() - 1]); //server için 7 olacak local 9 item.Count() - 1
         }
 
 
@@ -40,7 +42,7 @@ public partial class Referanslar : System.Web.UI.Page
 
     private void FillData(List<string> defaultImages)
     {
-        
+
     }
 
     private void WriteMenu(List<string> lettergroup)
@@ -63,15 +65,17 @@ public partial class Referanslar : System.Web.UI.Page
 
             foreach (var item in foldersbyletter)
             {
-                letter = item.Split('\\')[9];
-                subfoldername = item.Split('\\')[10]; //server tarafında 8 localde 10
+                string[] words = item.Split('\\');
+
+                letter = words[words.Count() - 2];
+                subfoldername = words[words.Count() - 1]; //server tarafında 8 localde 10
 
                 //sb.Append("<li><a class='photoslink' data-id='/referanslar/" + lettergroup[i].Trim() + "/" + subfoldername.Replace(' ', '-') + "'>" + subfoldername + "</a></li>");
-                sb.Append("<li><a class='photoslink' data-id='" + letter+ "\\" + subfoldername.Replace(' ', '-').EnglishCharLCase()  + "'>" + subfoldername + "</a></li>");
+                sb.Append("<li><a class='photoslink' data-id='" + letter + "\\" + subfoldername.Replace(' ', '-').EnglishCharLCase() + "'>" + subfoldername + "</a></li>");
 
             }
 
-            
+
 
             sb.Append("</ul></li>");
 
@@ -103,6 +107,6 @@ public partial class Referanslar : System.Web.UI.Page
 
 
     }*/
-    
+
 
 }

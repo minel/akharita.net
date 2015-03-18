@@ -11,7 +11,6 @@ public partial class Gallery : System.Web.UI.Page
     {
         string galleryname = Request.Form.ToString();
         
-        
 
     }
 }

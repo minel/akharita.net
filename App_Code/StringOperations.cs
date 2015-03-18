@@ -37,20 +37,22 @@ public static class StringOperations
 
     public static List<string> GetPhotoNames(this string path)
     {
-        string galleryfoldername = path.Split('\\')[10]; // servera atarken 8 yapacaksın galiba
-
-
         string[] photopaths = Directory.GetFiles(path);
 
         List<string> photonames = new List<string>();
 
         foreach (var item in photopaths)
         {
-            photonames.Add(galleryfoldername + "\\" + item.Split('\\')[11]); // o zaman burada server da 9 mu oluyor şimdi
+            string[] words = item.Split('\\');
+
+            string galleryfoldername = words[words.Count() - 2];
+            string photoname = words[words.Count() - 1];
+
+            photonames.Add(galleryfoldername + "\\" + photoname);
         }
 
         return photonames;
 
     }
-    
+
 }
