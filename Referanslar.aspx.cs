@@ -17,6 +17,10 @@ public partial class Referanslar : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
 
+        Title = "Ak Harita - Referanslarımız";
+        MetaKeywords = "Ak Harita çalışmalar, uygulamalarımız, referanslarımız";
+        MetaDescription = "";
+
         string alphabet = Server.MapPath("~/images/References");
 
         List<string> folders = Directory.GetDirectories(alphabet).ToList();
@@ -25,7 +29,7 @@ public partial class Referanslar : System.Web.UI.Page
         {
             string[] words = item.Split('\\');
 
-            fnames.Add(words[words.Count() - 1]); //server için 7 olacak local 9 item.Count() - 1
+            fnames.Add(words[words.Count() - 1]);
         }
 
 
@@ -38,10 +42,25 @@ public partial class Referanslar : System.Web.UI.Page
 
         FillData(defaultImages);
 
+
+        
+
+        
+        
     }
 
     private void FillData(List<string> defaultImages)
     {
+        foreach (var item in defaultImages)
+        {
+            sbdefphotos.Append(""+
+            "<a class='fancybox' rel='gallery1' href='/images/References/"+item+"' title='deneme'>"+
+                "<img src='images/References/A/"+item+"' />"+
+            "</a>"+
+            "");
+        }
+
+        gallerydiv.InnerHtml = sbdefphotos.ToString();
 
     }
 
@@ -52,8 +71,9 @@ public partial class Referanslar : System.Web.UI.Page
         for (int i = 0; i < lettergroup.Count; i++)
         {
             sb.Append("<li class='has-sub'><a href='/referanslar/" + lettergroup[i] + "'>" + lettergroup[i] + "</a>");
-
+            
             sb.Append("<ul>");
+            
             string underletter = Server.MapPath("~/images/References/" + lettergroup[i]);
 
             List<string> foldersbyletter = Directory.GetDirectories(underletter).ToList();
@@ -68,9 +88,8 @@ public partial class Referanslar : System.Web.UI.Page
                 string[] words = item.Split('\\');
 
                 letter = words[words.Count() - 2];
-                subfoldername = words[words.Count() - 1]; //server tarafında 8 localde 10
+                subfoldername = words[words.Count() - 1];
 
-                //sb.Append("<li><a class='photoslink' data-id='/referanslar/" + lettergroup[i].Trim() + "/" + subfoldername.Replace(' ', '-') + "'>" + subfoldername + "</a></li>");
                 sb.Append("<li><a class='photoslink' data-id='" + letter + "\\" + subfoldername.Replace(' ', '-').EnglishCharLCase() + "'>" + subfoldername + "</a></li>");
 
             }
@@ -107,6 +126,5 @@ public partial class Referanslar : System.Web.UI.Page
 
 
     }*/
-
 
 }

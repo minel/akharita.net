@@ -9,6 +9,8 @@ public partial class Hizmetler : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        Title = "Ak Harita - Hizmetlerimiz";
+        MetaKeywords = "Hizmetlerimiz, rölöve teklifleri";
+        MetaDescription = "Uzman kadrosuyla inşaat sektörünün rölöve ihtiyaçlarına cevap verir.";
     }
 }

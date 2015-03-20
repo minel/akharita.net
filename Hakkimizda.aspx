@@ -9,7 +9,7 @@
 
 	<div class="hakkimiz">
 		<h2>Vizyonumuz</h2>
-		<span>
+		<p>
 			2006 yılında kurulan AkHarita
 			profesyonel ekibiyle mühendislik
 			firmalarına haritacılıkla ilgili
@@ -27,19 +27,19 @@
 			ve mesleki alandaki gelişmeleri takip etmiş
 			ve müşterilerine iyi ve kaliteli hizmet
 			verme amacını taşımıştır. 
-		</span>
+		</p>
 	</div>
 
 	<div class="hakkimiz">
 		<h2>Misyonumuz</h2>
-		<span>
+		<p>
 			Müşteri memnuniyetini temel alan hizmetler ve çözümler sunmak.
 			<br />
 			
 			Şirketimiz, çağın gereklerine uygun olarak kaliteli hizmet,
 			doğru ve güvenilir veri üretme konusunda bu güne kadar göstermiş
 			olduğumuz titizliğimizi devam ettirerek daha ileriyi hedefleyeceğiz.
-		</span>
+		</p>
 	</div>
 </div>
 </asp:Content>

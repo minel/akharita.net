@@ -86,7 +86,7 @@ ul.bxslider {
 }
 
 .info2 {
-    width: 290px;
+    width: 285px;
     float: left;
     background-color: rgb(84,86,88);
     margin-left: 8px;
@@ -96,9 +96,9 @@ ul.bxslider {
     -webkit-box-shadow: 0px 0px 14px 0px rgba(50, 50, 50, 0.79);
     -moz-box-shadow: 0px 0px 14px 0px rgba(50, 50, 50, 0.79);
     box-shadow: 0px 0px 14px 0px rgba(50, 50, 50, 0.79);
-    padding-top: 15px;
-    padding-left: 10px;
-    padding-bottom: 25px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-bottom: 20px;
 }
 
     .info2 h3 {
@@ -107,7 +107,9 @@ ul.bxslider {
         margin: 0;
         line-height: 15px;
         margin-top: 3px;
-    }
+    
+        color: white;
+}
 
     .info2 span {
         font-size: 11px;
@@ -282,7 +284,9 @@ ul.special {
         font-family: 'Open Sans', sans-serif;
         font-weight: normal;
         color: #545658;
-    }
+    
+        margin-bottom: 0;
+}
 
     .pages-head h3 {
         margin-left: 10px;
@@ -348,7 +352,7 @@ ul.special {
     height: 150px;
 }
 
-    .hakkimiz span, .iletisim-item span {
+    .hakkimiz p, .iletisim-item span {
         padding: 10px;
         font-family: 'Open Sans', sans-serif;
         color: #545658;

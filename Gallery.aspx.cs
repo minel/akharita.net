@@ -10,7 +10,6 @@ public partial class Gallery : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         string galleryname = Request.Form.ToString();
-        
 
     }
 }

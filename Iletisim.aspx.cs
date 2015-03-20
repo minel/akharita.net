@@ -9,6 +9,8 @@ public partial class Iletisim : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        Title = "Ak Harita - İletişim";
+        MetaKeywords = "İletişim, Bize Ulaşın, Ak harita - Adresimiz, Ak Harita Telefon";
+        MetaDescription = "Teklif almak ve her türlü sorun, görüş, şikayetiniz için bizi arayın, mail atın, ziyaret edin.";
     }
 }

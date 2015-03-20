@@ -9,6 +9,8 @@ public partial class Hakkimizda : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        Title = "Ak Harita - Hakkımızda";
+        MetaKeywords = "Hakkımızda, Biz Kimiz, Ak Harita kimdir";
+        MetaDescription = "Ak haritanın kuruluşu misyon ve vizyonumuz en iyi ile en iyi rölöve hizmeti vermektir."
     }
 }

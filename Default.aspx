@@ -21,11 +21,12 @@
                 <span>Biz Kimiz?</span>
             </div>
             <div class="info1-abs">
-                <span>2006 yılında kurulan AkHarita profesyonel ekibiyle mühendislik firmalarına haritacılıkla ilgili hizmetlerine ihtiyaç duyan diğer tüm müşterilere hizmet sunmak amacıyla kurulmuştur.
-                <br />
-                <br />
-                Gerek inşaat sektörü gerek Alüminyum sektöründe birçok firmaya çözüm ortaklığında bulunmuştur.
-                </span>
+                <p>
+                    2006 yılında kurulan AkHarita profesyonel ekibiyle mühendislik firmalarına haritacılıkla ilgili hizmetlerine ihtiyaç duyan diğer tüm müşterilere hizmet sunmak amacıyla kurulmuştur.
+                </p>
+                <p>
+                    Gerek inşaat sektörü gerek Alüminyum sektöründe birçok firmaya çözüm ortaklığında bulunmuştur.
+                </p>
             </div>
         </div>
         <div class="info1">
@@ -33,15 +34,15 @@
                 <span>Ne Yaparız?</span>
             </div>
             <div class="info1-abs">
-                <span>Müşteri memnuniyetini temel alan hizmetler ve çözümler sunmak.
-                <br /><br />
+                <p>Müşteri memnuniyetini temel alan hizmetler ve çözümler sunmak.</p>
+                <p>
                 Hızlı doğru ve hatasız çalışma prensibi doğrultusunda müşterilerimizle güvene dayalı kalıcı ilişkiler sürdürmek.
-			    
-                </span>
+			    </p>
+                
             </div>
         </div>
         <div class="info2">
-            <h3>Bizimle İletişime Geçin</h3>
+            <h3>Ak Harita ile İletişime Geçin...</h3>
             <span>SİZE YARDIMCI OLMAK İÇİN 7/24 HİZMETİNİZDEYİZ.</span>
             <br />
 		<br />
