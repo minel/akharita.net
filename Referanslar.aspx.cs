@@ -54,8 +54,8 @@ public partial class Referanslar : System.Web.UI.Page
         foreach (var item in defaultImages)
         {
             sbdefphotos.Append(""+
-            "<a class='fancybox' rel='gallery1' href='/images/References/"+item+"' title='deneme'>"+
-                "<img src='images/References/A/"+item+"' />"+
+            "<a class='fancybox' rel='gallery1' href='/images/References/A/"+item+"' title='"+item.Replace(".jpg","")+"'>"+
+                "<img src='/images/References/A/"+item+"' />"+
             "</a>"+
             "");
         }
@@ -90,7 +90,7 @@ public partial class Referanslar : System.Web.UI.Page
                 letter = words[words.Count() - 2];
                 subfoldername = words[words.Count() - 1];
 
-                sb.Append("<li><a class='photoslink' data-id='" + letter + "\\" + subfoldername.Replace(' ', '-').EnglishCharLCase() + "'>" + subfoldername + "</a></li>");
+                sb.Append("<li><a class='photoslink' data-id='" + letter + "/" + subfoldername/*.Replace(' ', '-').EnglishCharLCase()*/ + "'>" + subfoldername + "</a></li>");
 
             }
 

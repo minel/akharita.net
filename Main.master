@@ -9,9 +9,11 @@
     <link href="/bxslider/jquery.bxslider.css" rel="stylesheet" />
     <link href="/fancy/jquery.fancybox.css" rel="stylesheet" />
     <link href="/styles/accordionmenu.css" rel="stylesheet" />
+    <link href="/styles/Form.css" rel="stylesheet" />
     <link href="/styles/style.css" rel="stylesheet" />
 </head>
 <body>
+
     <div class="container">
         <div class="topmenu">
             <div class="navbar">
@@ -95,22 +97,22 @@
     </script>
 
     <script type="text/javascript">
-        $(document).ready(function() {
-	        $(".fancybox").fancybox({
-		        openEffect	: 'none',
-		        closeEffect	: 'none'
-	        });
+        $(document).ready(function () {
+            $(".fancybox").fancybox({
+                openEffect: 'none',
+                closeEffect: 'none'
+            });
         });
     </script>
 
-    
+
 
     <script type="text/javascript">
         //this is jquery ajax post area
 
         $('.photoslink').click(function () {
 
-            
+
             var postdata = $(this).data('id');
 
             $.ajax({ // ajax işlemi başlar

@@ -48,11 +48,38 @@ public static class StringOperations
             string galleryfoldername = words[words.Count() - 2];
             string photoname = words[words.Count() - 1];
 
-            photonames.Add(galleryfoldername + "\\" + photoname);
+            photonames.Add(galleryfoldername + "/" + photoname);
         }
 
         return photonames;
 
+    }
+
+    public static string ReplaceUniCodeChar(this string s)
+    {
+        string result = string.Empty;
+        if (!String.IsNullOrEmpty(s))
+        {
+            result = s;
+
+            result = result
+                        .Replace("+", " ")
+                        .Replace("%2f", "/")
+                        .Replace("%u00e7", "ç")
+                        .Replace("%u011f", "ğ")
+                        .Replace("%u0131", "ı")
+                        .Replace("%u00f6", "ö")
+                        .Replace("%u015f", "ş")
+                        .Replace("%u00fc", "ü")
+                        .Replace("%u00c7", "Ç")
+                        .Replace("%u011e", "Ğ")
+                        .Replace("%u0130", "İ")
+                        .Replace("%u00d6", "Ö")
+                        .Replace("%u015e", "Ş")
+                        .Replace("%u00dc", "Ü");
+        }
+
+        return result;
     }
 
 }

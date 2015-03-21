@@ -11,6 +11,6 @@ public partial class Hakkimizda : System.Web.UI.Page
     {
         Title = "Ak Harita - Hakkımızda";
         MetaKeywords = "Hakkımızda, Biz Kimiz, Ak Harita kimdir";
-        MetaDescription = "Ak haritanın kuruluşu misyon ve vizyonumuz en iyi ile en iyi rölöve hizmeti vermektir."
+        MetaDescription = "Ak haritanın kuruluşu misyon ve vizyonumuz en iyi ile en iyi rölöve hizmeti vermektir.";
     }
 }

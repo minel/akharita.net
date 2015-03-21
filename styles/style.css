@@ -177,13 +177,12 @@ ul.bxslider {
 }
 
 .offer {
-    /* margin-bottom: 15px; */
-    height: 106px;
+    height: 105px;
 }
 
 .offer-link {
     float: left;
-    height: 101px;
+    height: 100px;
     padding-left: 10px;
     padding-top: 5px;
     width: 480px;
@@ -249,7 +248,7 @@ ul.special {
     padding-top: 20px;
     padding-left: 20px;
     position: absolute;
-    bottom: -76px;
+    bottom: -75px;
     width: 940px;
 }
 
@@ -413,6 +412,11 @@ ul.special {
 
 .referanslar-gallery{
     float:left;
+    margin-left: 20px;
+}
+
+a.fancybox{
+    margin-right:5px;
 }
 
 a.fancybox img{
